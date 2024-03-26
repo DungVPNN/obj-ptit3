@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body style="font-family: 'Noto Sans', sans-serif;">
+    <section>
+        <form id="formLogin" style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+            <div class="icon"><span class="material-symbols-outlined">lock</span></div>
+            <div style="font-size: 32px; font-weight: 500;">Đăng nhập</div>
+            <div><input id="emailUser" class="box" type="email" placeholder="Email Address *"></div>
+            <label id="emailError1" style="margin-right: 215px; color: red;" hidden>* Email không tồn tại</label>
+            <label id="emailError2" style="margin-right: 200px; color: red;" hidden>* Email không được để trống</label>
+            <div><input id="passUser" class="box" type="password" placeholder="Password *"></div>
+            <label id="passError1" style="margin-right: 165px; color: red;" hidden>* Mật khẩu không được để trống</label>
+            <label id="passError2" style="margin-right: 165px; color: red;" hidden>* Mật khẩu không tồn tại</label>
+            <label id="userLock" style="margin-right: 165px; color: red;" hidden>* Tài khoản đã bị khóa</label>
+            <div style="display: flex; gap: 10px; margin-right: 260px;">
+                <input type="checkbox">
+                <p>Remember me</p>
+            </div>
+            <div><button class="box" style="padding: 10px 20px 10px 20px; color: white; font-weight: 700; background-color: rgb(0, 94, 255);
+            border: 1px solid; width: 397px; cursor: pointer;">SIGN IN</button></div>
+            <div style="display: flex; gap: 48px; font-size: 14px;">
+                <a href="#">Quên mật khẩu?</a>
+                <a href="./register.html">Bạn chưa có tài khoản? Đăng ký ngay</a></div>
+            <div style="margin-top: 50px; color: rgb(165, 165, 165);">Copyright <i class="bi bi-c-circle"></i> <a style="color: rgb(165, 165, 165);" href="#">Your website</a> 2024</div>
+        </form>
+    </section>
+    <div id="snackbar">Đăng nhập thành công!</div>
+    <script src="../js/login.js"></script>
+</body>
+</html>

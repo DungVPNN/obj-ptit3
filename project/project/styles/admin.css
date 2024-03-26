@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+.logo{
+    padding-left: 30px;
+    color: white;
+}
+#adminProfile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    background: linear-gradient(-180deg, #ff311e, rgb(255, 119, 73));
+    width: 300px;
+    height: 400vh;
+}
+.manager{
+    padding: 20px 30px;
+    color: white;
+    cursor: pointer;
+}
+.right{
+    background-color: #ff9e93;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.returnHome{
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+    line-height: 50px;
+}
+.returnHome:hover{
+    color: white;
+}
+.manager-item{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.Btn{
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #f53d2d;
+    color: white;
+}
+.Btn:hover{
+    background-color: #ff776a;
+}
+.productName{
+    white-space: nowrap; 
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.addItem{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: white;
+}
+.inputAdd{
+    display: flex;
+}
+.addItem label t{
+    width: 300px;
+}
+.editItem{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.inputEdit{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    list-style: none;
+}
+.editItem label t{
+    width: 300px;
+}
+.btnForm{
+    width: 300px;
+    padding: 10px 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #f53d2d;
+    color: white;
+}
+.btnForm:hover{
+    background-color: #ff776a;
+}
+.input{
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 4px;
+}
